@@ -43,9 +43,8 @@ const luis = {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,php,dart,html,css&theme=dark" alt="Languages" /><br/>
-<img src="https://skillicons.dev/icons?i=nextjs,react,nestjs,tailwind,flutter&theme=dark" alt="Frameworks" /><br/>
-<img src="https://skillicons.dev/icons?i=postgres,redis,docker,gcp,github,git&theme=dark" alt="Tools" />
+<img src="https://skillicons.dev/icons?i=ts,js,php,nextjs,react,nestjs,tailwind,flutter&theme=dark" alt="Languages and Frameworks" /><br/>
+<img src="https://skillicons.dev/icons?i=postgres,redis,docker,gcp,github,git,dart,css&theme=dark" alt="Tools and More" />
 
 </div>
 
