@@ -1,12 +1,12 @@
-name: Generate Snake
+name: Update Profile Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
-  build:
+  snake:
     runs-on: ubuntu-latest
     steps:
       - uses: Platane/snk/svg-only@v3
@@ -22,3 +22,114 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  streak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate streak stats
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Query contribution calendar via GraphQL
+            const query = `{
+              user(login: "luisfs4") {
+                contributionsCollection {
+                  contributionCalendar {
+                    totalContributions
+                    weeks {
+                      contributionDays {
+                        date
+                        contributionCount
+                      }
+                    }
+                  }
+                }
+              }
+            }`;
+
+            const result = await github.graphql(query);
+            const days = result.user.contributionsCollection.contributionCalendar.weeks
+              .flatMap(w => w.contributionDays);
+            const total = result.user.contributionsCollection.contributionCalendar.totalContributions;
+
+            // Calculate current streak
+            let currentStreak = 0;
+            let currentStart = '';
+            let currentEnd = '';
+            const today = new Date().toISOString().slice(0, 10);
+
+            for (let i = days.length - 1; i >= 0; i--) {
+              // Skip future dates
+              if (days[i].date > today) continue;
+              // Allow today to have 0 (day not over yet)
+              if (days[i].contributionCount === 0 && days[i].date !== today) break;
+              if (days[i].contributionCount > 0) {
+                currentStreak++;
+                currentStart = days[i].date;
+                if (!currentEnd) currentEnd = days[i].date;
+              }
+            }
+
+            // Calculate longest streak
+            let longestStreak = 0, tempStreak = 0;
+            let longestStart = '', longestEnd = '', tempStart = '';
+            for (const day of days) {
+              if (day.contributionCount > 0) {
+                tempStreak++;
+                if (tempStreak === 1) tempStart = day.date;
+                if (tempStreak > longestStreak) {
+                  longestStreak = tempStreak;
+                  longestStart = tempStart;
+                  longestEnd = day.date;
+                }
+              } else {
+                tempStreak = 0;
+              }
+            }
+
+            const fmtDate = (d) => {
+              const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+              const parts = d.split('-');
+              return `${months[parseInt(parts[1])-1]} ${parseInt(parts[2])}, ${parts[0]}`;
+            };
+
+            // Generate SVG
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+              <rect width="800" height="200" rx="10" fill="#0d1117"/>
+              <!-- Total Contributions -->
+              <text x="133" y="70" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold">${total.toLocaleString()}</text>
+              <text x="133" y="95" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="13">Total Contributions</text>
+              <text x="133" y="115" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">(last year)</text>
+              <!-- Current Streak -->
+              <circle cx="400" cy="55" r="35" fill="none" stroke="#1f6feb" stroke-width="3"/>
+              <text x="400" y="48" text-anchor="middle" fill="#ff6e40" font-family="Segoe UI, sans-serif" font-size="14">🔥</text>
+              <text x="400" y="68" text-anchor="middle" fill="#58a6ff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">${currentStreak}</text>
+              <text x="400" y="100" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Current Streak</text>
+              <text x="400" y="120" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">${currentStart ? fmtDate(currentStart) + ' - ' + fmtDate(currentEnd) : 'N/A'}</text>
+              <!-- Longest Streak -->
+              <text x="667" y="70" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold">${longestStreak}</text>
+              <text x="667" y="95" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="13">Longest Streak</text>
+              <text x="667" y="115" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">${fmtDate(longestStart)} - ${fmtDate(longestEnd)}</text>
+              <!-- Dividers -->
+              <line x1="267" y1="40" x2="267" y2="130" stroke="#21262d" stroke-width="1"/>
+              <line x1="533" y1="40" x2="533" y2="130" stroke="#21262d" stroke-width="1"/>
+              <!-- Footer -->
+              <text x="400" y="170" text-anchor="middle" fill="#484f58" font-family="Segoe UI, sans-serif" font-size="10">Updated ${new Date().toISOString().slice(0,10)}</text>
+            </svg>`;
+
+            fs.mkdirSync('stats', { recursive: true });
+            fs.writeFileSync('stats/streak.svg', svg);
+            console.log(`Streak: ${currentStreak} | Longest: ${longestStreak} | Total: ${total}`);
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats/
+          git diff --staged --quiet || (git commit -m "ci: update streak stats" && git push)
