@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=220&section=header&text=Luis%20S%C3%A1nchez&fontSize=55&fontColor=ffffff&fontAlignY=35&desc=Full%20Stack%20%2B%20AI-Powered%20Developer&descSize=18&descAlignY=55&animation=fadeIn" width="100%" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Full+Stack+%2B+AI-Powered+Development;Next.js+%7C+NestJS+%7C+PostgreSQL+%7C+Flutter;Zapopan%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Full+Stack+%2B+AI-Powered+Development;Next.js+%7C+NestJS+%7C+PostgreSQL+%7C+Flutter;Zapopan%2C+M%C3%A9xico+%F0%9F%87%B2%F0%9F%87%BD)](https://git.io/typing-svg)
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=luisfs4&style=for-the-badge&color=1f6feb&label=PROFILE+VIEWS" alt="Profile Views" />
