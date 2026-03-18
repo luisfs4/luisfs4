@@ -54,10 +54,10 @@ const luis = {
 
 <div align="center">
 
-<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luisfs4&theme=github_dark" alt="Contribution Details" />
+<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luisfs4&_cb=1773851980&theme=github_dark" alt="Contribution Details" />
 
 
-<img width="95%" src="https://streak-stats.demolab.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
+<img width="95%" src="https://streak-stats.demolab.com?user=luisfs4&_cb=1773851980&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
 
 </div>
 
@@ -68,7 +68,7 @@ const luis = {
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=luisfs4&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ff6e40&area=true&area_color=1f6feb" alt="Activity Graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=luisfs4&_cb=1773851980&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ff6e40&area=true&area_color=1f6feb" alt="Activity Graph" width="100%" />
 
 </div>
 
