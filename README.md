@@ -57,7 +57,7 @@ const luis = {
 <img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luisfs4&theme=github_dark" alt="Contribution Details" />
 
 
-<img width="95%" src="https://github-readme-streak-stats.herokuapp.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
+<img width="95%" src="https://streak-stats.demolab.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
 
 </div>
 
