@@ -55,17 +55,20 @@ const luis = {
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-stats.vercel.app/api?username=luisfs4&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&ring_color=238636&include_all_commits=true&count_private=true&custom_title=GitHub+Stats" alt="GitHub Stats" />
+<img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luisfs4&theme=github_dark" alt="Contribution Details" />
+
+<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=luisfs4&theme=github_dark" alt="Repos per Language" />&nbsp;
+<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=luisfs4&theme=github_dark" alt="Most Commit Language" />
+
+<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=luisfs4&theme=github_dark" alt="Stats" />&nbsp;
+<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=luisfs4&theme=github_dark&utcOffset=-6" alt="Productive Time" />
 
 <br/>
 
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
-
-<br/>
-
-<img width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luisfs4&layout=donut-vertical&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8&count_private=true" alt="Top Languages" />
+<img width="60%" src="https://github-readme-streak-stats.herokuapp.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
 
 </div>
+
 
 ---
 
