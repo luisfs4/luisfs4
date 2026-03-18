@@ -57,28 +57,11 @@ const luis = {
 
 <img width="95%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luisfs4&theme=github_dark" alt="Contribution Details" />
 
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=luisfs4&theme=github_dark" alt="Repos per Language" />&nbsp;
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=luisfs4&theme=github_dark" alt="Most Commit Language" />
-
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=luisfs4&theme=github_dark" alt="Stats" />&nbsp;
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=luisfs4&theme=github_dark&utcOffset=-6" alt="Productive Time" />
-
-<br/>
 
 <img width="60%" src="https://github-readme-streak-stats.herokuapp.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
 
 </div>
 
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=luisfs4&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies" />
-
-</div>
 
 ---
 
