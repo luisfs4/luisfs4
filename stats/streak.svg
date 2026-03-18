@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <rect width="800" height="200" rx="10" fill="#0d1117"/>
+  <!-- Total Contributions -->
+  <text x="133" y="70" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold">5,917</text>
+  <text x="133" y="95" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="13">Total Contributions</text>
+  <text x="133" y="115" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">(last year)</text>
+  <!-- Current Streak -->
+  <circle cx="400" cy="55" r="35" fill="none" stroke="#1f6feb" stroke-width="3"/>
+  <text x="400" y="48" text-anchor="middle" fill="#ff6e40" font-family="Segoe UI, sans-serif" font-size="14">🔥</text>
+  <text x="400" y="68" text-anchor="middle" fill="#58a6ff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="bold">108</text>
+  <text x="400" y="100" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold">Current Streak</text>
+  <text x="400" y="120" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">Dec 1, 2025 - Mar 18, 2026</text>
+  <!-- Longest Streak -->
+  <text x="667" y="70" text-anchor="middle" fill="#c9d1d9" font-family="Segoe UI, sans-serif" font-size="28" font-weight="bold">108</text>
+  <text x="667" y="95" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="13">Longest Streak</text>
+  <text x="667" y="115" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, sans-serif" font-size="11">Dec 1, 2025 - Mar 18, 2026</text>
+  <!-- Dividers -->
+  <line x1="267" y1="40" x2="267" y2="130" stroke="#21262d" stroke-width="1"/>
+  <line x1="533" y1="40" x2="533" y2="130" stroke="#21262d" stroke-width="1"/>
+  <!-- Footer -->
+  <text x="400" y="170" text-anchor="middle" fill="#484f58" font-family="Segoe UI, sans-serif" font-size="10">Updated 2026-03-18</text>
+</svg>
