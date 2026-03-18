@@ -16,16 +16,24 @@
 
 ## ⚡ About Me
 
-Full Stack Developer en Zapopan, México. Desarrollo plataformas web para gobierno, sector salud y organizaciones civiles — sistemas que manejan miles de usuarios, datos geoespaciales e integraciones con IA.
-
 ```typescript
-const stack = {
-  frontend:  ["Next.js", "React", "Tailwind CSS", "shadcn/ui"],
-  backend:   ["NestJS", "Node.js", "PHP", "CodeIgniter"],
-  mobile:    ["Flutter", "React Native"],
-  database:  ["PostgreSQL", "TypeORM", "Redis", "BullMQ"],
-  ai:        ["Claude API", "OpenAI API", "NLP pipelines", "AI chatbots"],
-  devops:    ["Google Cloud", "PM2", "GitHub Actions", "Docker"],
+const luis = {
+  role: "Full Stack + AI-Powered Developer",
+  location: "Zapopan, MX",
+  building: [
+    "Government platforms",
+    "AI chatbots (WhatsApp + NLP)",
+    "GIS dashboards",
+    "Multi-tenant SaaS",
+  ],
+  stack: {
+    frontend: ["Next.js", "React", "Tailwind", "shadcn/ui"],
+    backend:  ["NestJS", "Node.js", "PHP", "CodeIgniter"],
+    mobile:   ["Flutter", "React Native"],
+    data:     ["PostgreSQL", "TypeORM", "Redis", "BullMQ"],
+    ai:       ["Claude API", "OpenAI API", "NLP pipelines"],
+    devops:   ["Google Cloud", "PM2", "GitHub Actions", "Docker"],
+  },
 };
 ```
 
