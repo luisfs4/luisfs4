@@ -7,7 +7,7 @@
 <p>
   <img src="https://komarev.com/ghpvc/?username=luisfs4&style=for-the-badge&color=1f6feb&label=PROFILE+VIEWS" alt="Profile Views" />
   <a href="https://github.com/luisfs4?tab=followers"><img src="https://img.shields.io/github/followers/luisfs4?style=for-the-badge&color=238636&labelColor=0d1117&label=Followers" alt="Followers" /></a>
-  <img src="https://img.shields.io/badge/5,900+_Contributions-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="Contributions" />
+  <img src="https://img.shields.io/badge/6,200+_Contributions-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="Contributions" />
 </p>
 
 </div>
