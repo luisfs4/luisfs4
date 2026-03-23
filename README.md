@@ -12,30 +12,6 @@
 
 </div>
 
----
-
-## ⚡ About Me
-
-```typescript
-const luis = {
-  role: "Full Stack + AI-Powered Developer",
-  location: "Zapopan, MX",
-  building: [
-    "Government platforms",
-    "AI chatbots (WhatsApp + NLP)",
-    "GIS dashboards",
-    "Multi-tenant SaaS",
-  ],
-  stack: {
-    frontend: ["Next.js", "React", "Tailwind", "shadcn/ui"],
-    backend:  ["NestJS", "Node.js", "PHP", "CodeIgniter"],
-    mobile:   ["Flutter", "React Native"],
-    data:     ["PostgreSQL", "TypeORM", "Redis", "BullMQ"],
-    ai:       ["Claude API", "OpenAI API", "NLP pipelines"],
-    devops:   ["Google Cloud", "PM2", "GitHub Actions", "Docker"],
-  },
-};
-```
 
 ---
 
@@ -78,11 +54,11 @@ const luis = {
 
 <div align="center">
 
-| 🏛️ Plataformas de Gobierno | 🤖 Soluciones con IA | 📊 Data & GIS |
+| 🏛️ Government Platforms | 🤖 AI Solutions | 📊 Data & GIS |
 |:---:|:---:|:---:|
-| Portales de servicios públicos | Chatbots inteligentes (WhatsApp + NLP) | Dashboards interactivos |
-| Expedientes digitales | Procesamiento de datos con IA | Mapas choropleth y GeoJSON |
-| Sistemas multi-tenant SaaS | Pipelines de análisis automatizado | Reportes en tiempo real |
+| Public service portals | Smart chatbots (WhatsApp + NLP) | Interactive dashboards |
+| Digital records systems | AI-powered data processing | Choropleth maps & GeoJSON |
+| Multi-tenant SaaS | Automated analysis pipelines | Real-time reporting |
 
 </div>
 
