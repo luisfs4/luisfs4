@@ -19,8 +19,8 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,php,nextjs,react,nestjs,tailwind,flutter&theme=dark" alt="Languages and Frameworks" /><br/>
-<img src="https://skillicons.dev/icons?i=postgres,redis,docker,gcp,github,git,dart,css&theme=dark" alt="Tools and More" />
+<img src="https://skillicons.dev/icons?i=ts,js,py,php,nextjs,react,nestjs,django,tailwind,flutter&theme=dark" alt="Languages and Frameworks" /><br/>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,gcp,github,git,dart,css&theme=dark" alt="Tools and More" />
 
 </div>
 
@@ -34,6 +34,9 @@
 
 
 <img width="95%" src="https://streak-stats.demolab.com?user=luisfs4&theme=github-dark-blue&hide_border=true&background=0D1117&ring=1f6feb&fire=ff6e40&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
+
+<img width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luisfs4&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" alt="Top Languages" />
+<img width="47%" src="https://github-readme-stats.vercel.app/api?username=luisfs4&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58a6ff&text_color=c9d1d9&icon_color=ff6e40&show_icons=true&count_private=true" alt="GitHub Stats" />
 
 </div>
 
@@ -54,11 +57,11 @@
 
 <div align="center">
 
-| 🏛️ Government Platforms | 🤖 AI Solutions | 📊 Data & GIS |
-|:---:|:---:|:---:|
-| Public service portals | Smart chatbots (WhatsApp + NLP) | Interactive dashboards |
-| Digital records systems | AI-powered data processing | Choropleth maps & GeoJSON |
-| Multi-tenant SaaS | Automated analysis pipelines | Real-time reporting |
+| 🏛️ Government Platforms | 🤖 AI Solutions | 📊 Data & GIS | 📱 Mobile & IoT |
+|:---:|:---:|:---:|:---:|
+| Public service portals | Smart chatbots (WhatsApp + NLP) | Interactive dashboards | Flutter cross-platform apps |
+| Digital records systems | AI-powered data processing | Choropleth maps & GeoJSON | HIKVISION ISAPI integrations |
+| Multi-tenant SaaS | Automated analysis pipelines | Real-time reporting | Samsung Tizen digital signage |
 
 </div>
 
