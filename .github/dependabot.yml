@@ -1,0 +1,16 @@
+# Este repo sólo tiene el workflow de la serpiente del perfil: Dependabot mantiene
+# al día las acciones que usa (fijadas a su commit), nada más.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:00"
+      timezone: America/Mexico_City
+    groups:
+      acciones:
+        patterns: ["*"]
+    commit-message:
+      prefix: "ci(deps)"
